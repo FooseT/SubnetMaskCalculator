@@ -17,7 +17,7 @@ def calculate_subnet_details():
 
         label_result.config(text=f"Network Address: {network.network_address}\n"
                                 f"Broadcast Address: {broadcast}\n"
-                                f"Number of IPs: {num_ips}\n"
+                                f"Number of possible IPs: {num_ips}\n"
                                 f"Number of usable IPs: {num_ips -2}\n")
 
     except ValueError as e:
