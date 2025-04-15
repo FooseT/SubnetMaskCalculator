@@ -17,10 +17,11 @@ def calculate_subnet_details():
 
         label_result.config(text=f"Network Address: {network.network_address}\n"
                                 f"Broadcast Address: {broadcast}\n"
-                                f"Number of IPs: {num_ips}\n")
+                                f"Number of IPs: {num_ips}\n"
+                                f"Number of usable IPs: {num_ips -2}\n")
 
     except ValueError as e:
-        label_result.config(text="Invalid IP or Subnet. Please try again.")
+        label_result.config(text="Invalid IP or Subnet.")
 
 #This block is what you will want to edit if you would like to change any of the features
 #root.resizable(False, False) makes it so that the window is not resizable, I did this because I thought it looked better small
